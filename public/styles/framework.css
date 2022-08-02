@@ -1,0 +1,86 @@
+/*  */
+:root {
+  --container: 700px;
+  --radius: 6px;
+  --primary: #1e88e5;
+  --background: #f2f2f6;
+  --card: #ffffff;
+  --border: #eeeeee;
+  --shadow: #00000011;
+  --text: #000000;
+  --textOpacity: #777777;
+}
+
+/*  */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --card: #171717;
+    --border: #333333;
+    --text: #ffffff;
+  }
+}
+
+/* Use font face */
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  font-family: 'TT Commons';
+  src: url('/public/fonts/TTCommons-Regular.woff2');
+}
+@font-face {
+  font-weight: 700;
+  font-display: swap;
+  font-family: 'TT Commons';
+  src: url('/public/fonts/TTCommons-Bold.woff2');
+}
+
+/* Use global styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Use tags styles */
+body {
+  line-height: 1.5;
+  margin: 0;
+  background-color: var(--background);
+  font-family: 'TT Commons', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text);
+}
+h1, h2, h3 {
+  line-height: 1.2;
+  margin: 20px 0 10px 0;
+}
+h4, h5, h6 {
+  line-height: 1.2;
+  margin: 10px 0;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px 0;
+}
+a {
+  color: var(--primary);
+}
+img {
+  max-width: 100%;
+}

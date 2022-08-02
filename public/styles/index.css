@@ -1,0 +1,108 @@
+.layout {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.layout .sidebar {
+  width: 280px;
+  padding: 30px 20px 10px 20px;
+  border-radius: var(--radius);
+  background-color: var(--card);
+  box-shadow: 0 0 25px var(--shadow);
+}
+.layout .sidebar .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.layout .sidebar .head .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding-top: 3px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  font-size: 20px;
+  color: #ffffff;
+}
+.layout .sidebar .head .info {
+  width: calc(100% - 75px);
+}
+.layout .sidebar .head .info span {
+  display: block;
+  line-height: 1;
+}
+.layout .sidebar .head .info span:nth-of-type(1) {
+  font-weight: 700;
+}
+.layout .sidebar .head .info span:nth-of-type(2) {
+  font-size: 14px;
+  color: var(--textOpacity);
+}
+.layout .sidebar input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--border);
+}
+.layout .sidebar a {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 12px 10px 10px 10px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--textOpacity);
+}
+.layout .sidebar a svg {
+  position: relative;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+}
+.layout .sidebar a._active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.layout .sidebar .footer {
+  position: relative;
+  padding-top: 10px;
+}
+.layout .sidebar .footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  height: 1px;
+  background-color: var(--border);
+}
+
+
+.layout section#index {
+  width: calc(100% - 330px);
+  /* padding: 0 20px; */
+}
+.layout section#index h1 {
+  margin: 0;
+}
+.layout section#index .subtitle {
+  margin-bottom: 30px;
+  color: var(--textOpacity);
+}
+.layout section#index .content {
+  padding: 20px;
+  border-radius: var(--radius);
+  background-color: var(--card);
+}
